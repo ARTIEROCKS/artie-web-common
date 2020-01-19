@@ -43,5 +43,26 @@ public class Student {
     public void setMotivation(String motivation) {
         this.motivation = motivation;
     }
+    
+    /**
+     * Default constructor
+     */
+    public Student() {}
+    
+    /**
+     * Parameterized constructor
+     * @param id
+     * @param name
+     * @param lastName
+     * @param competence
+     * @param motivation
+     */
+    public Student(String id, String name, String lastName, String competence, String motivation){
+    	this.id = id;
+    	this.name = name;
+    	this.lastName = lastName;
+    	this.competence = competence;
+    	this.motivation = motivation;
+    }
 
 }
