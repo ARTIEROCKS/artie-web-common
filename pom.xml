@@ -8,8 +8,8 @@
 		<version>2.2.2.RELEASE</version>
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
-	<groupId>artie.common</groupId>
-	<artifactId>web</artifactId>
+	<groupId>artie.web</groupId>
+	<artifactId>common</artifactId>
 	<version>0.1-RELEASE</version>
 	<name>web</name>
 	<description>Common Library for ARTIE Web and Web Servicess</description>
