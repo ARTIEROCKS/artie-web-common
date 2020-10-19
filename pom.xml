@@ -10,7 +10,7 @@
 	</parent>
 	<groupId>artie.web</groupId>
 	<artifactId>common</artifactId>
-	<version>0.1-RELEASE</version>
+	<version>0.2-RELEASE</version>
 	<name>web</name>
 	<description>Common Library for ARTIE Web and Web Servicess</description>
 
