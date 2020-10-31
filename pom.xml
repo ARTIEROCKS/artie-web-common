@@ -10,9 +10,9 @@
 	</parent>
 	<groupId>artie.web</groupId>
 	<artifactId>common</artifactId>
-	<version>0.2-RELEASE</version>
+	<version>0.3-SNAPSHOT</version>
 	<name>web</name>
-	<description>Common Library for ARTIE Web and Web Servicess</description>
+	<description>Common Library for ARTIE Web and Web Services</description>
 
 	<properties>
 		<java.version>1.8</java.version>

@@ -1,14 +1,21 @@
 package artie.common.web.dto;
 
+import artie.common.web.enums.ValidSolutionEnum;
+
 import java.util.ArrayList;
 import java.util.List;
 
 public class Exercise {
 	
-	String id;
-    String name;
-    String description;
-    List<Skill> skills = new ArrayList<>();
+	private String id;
+    private String name;
+    private String description;
+    private List<Skill> skills = new ArrayList<>();
+
+    private String screenShot = null;
+    private String finishedExerciseId = null;
+    private int validSolution = ValidSolutionEnum.WAITING_APPROVAL.getValue();
+
 
     public String getId() {
     	return id;
@@ -38,13 +45,22 @@ public class Exercise {
         this.skills = skills;
     }
 
+    public String getScreenShot(){ return screenShot; }
+    public void setScreenShot(String screenShot){ this.screenShot = screenShot; }
+
+    public String getFinishedExerciseId(){ return finishedExerciseId; }
+    public void setFinishedExerciseId(String finishedExerciseId){ this.finishedExerciseId = finishedExerciseId; }
+
+    public int getValidSolution(){ return this.validSolution; }
+    public void setValidSolution(int validSolution){this.validSolution = validSolution; }
+
     /**
      * Default constructor
      */
     public Exercise(){}
 
     /**
-     * Parameterized constructor
+     * Parameterized constructor for setting the exercise information
      * @param id
      * @param name
      * @param description
@@ -55,5 +71,19 @@ public class Exercise {
     	this.name = name;
         this.description = description;
         this.skills = skills;
+    }
+
+    /**
+     * Parameterized constructor for setting the finished exercise information
+     * @param id
+     * @param finishedExerciseId
+     * @param screenShot
+     * @param validSolution
+     */
+    public Exercise(String id, String finishedExerciseId, String screenShot, int validSolution){
+        this.id = id;
+        this.finishedExerciseId = finishedExerciseId;
+        this.screenShot = screenShot;
+        this.validSolution = validSolution;
     }
 }
