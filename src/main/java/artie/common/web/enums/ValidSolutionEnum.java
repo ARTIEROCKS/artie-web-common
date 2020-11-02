@@ -2,9 +2,9 @@ package artie.common.web.enums;
 
 public enum ValidSolutionEnum {
 
-    REJECTED(-1),
     WAITING_APPROVAL(0),
-    VALIDATED(1);
+    REJECTED(1),
+    VALIDATED(2);
 
     private int value;
     private ValidSolutionEnum(int value) {
