@@ -76,11 +76,12 @@ public class Exercise {
     /**
      * Parameterized constructor for setting the finished exercise information
      * @param id
+     * @param name
      * @param finishedExerciseId
      * @param screenShot
      * @param validSolution
      */
-    public Exercise(String id, String finishedExerciseId, String screenShot, int validSolution){
+    public Exercise(String id, String name, String finishedExerciseId, String screenShot, int validSolution){
         this.id = id;
         this.finishedExerciseId = finishedExerciseId;
         this.screenShot = screenShot;
