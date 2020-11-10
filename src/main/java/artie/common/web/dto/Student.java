@@ -6,6 +6,7 @@ public class Student {
     private String id;
     private String name;
     private String lastName;
+    private String studentNumber;
     private String competence;
     private String motivation; 
 
@@ -29,6 +30,9 @@ public class Student {
     public void setLastName(String lastName) {
         this.lastName = lastName;
     }
+
+    public String getStudentNumber(){return studentNumber;}
+    public void setStudentNumber(String studentNumber){this.studentNumber = studentNumber;}
 
     public String getCompetence() {
         return competence;
@@ -54,13 +58,15 @@ public class Student {
      * @param id
      * @param name
      * @param lastName
+     * @param studentNumber
      * @param competence
      * @param motivation
      */
-    public Student(String id, String name, String lastName, String competence, String motivation){
+    public Student(String id, String name, String lastName, String studentNumber, String competence, String motivation){
     	this.id = id;
     	this.name = name;
     	this.lastName = lastName;
+    	this.studentNumber = studentNumber;
     	this.competence = competence;
     	this.motivation = motivation;
     }
