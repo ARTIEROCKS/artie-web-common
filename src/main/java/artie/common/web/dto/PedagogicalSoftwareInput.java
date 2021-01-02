@@ -4,6 +4,7 @@ public class PedagogicalSoftwareInput {
 
     private String inputName;
     private String type;
+    private String opcode;
     private PedagogicalSoftwareElement element;
     private String inputValue;
     private String solutionValue;
@@ -17,6 +18,9 @@ public class PedagogicalSoftwareInput {
 
     public String getType() { return type; }
     public void setType(String type){ this.type = type; }
+
+    public String getOpCode() { return opcode; }
+    public void setOpcode(String opcode){ this.opcode = opcode; }
 
     public PedagogicalSoftwareElement getElement() {
         return element;
@@ -48,13 +52,15 @@ public class PedagogicalSoftwareInput {
      * Parameterized constructor
      * @param inputName
      * @param type
+     * @param opcode
      * @param element
      * @param inputValue
      * @param solutionValue
      */
-    public PedagogicalSoftwareInput(String inputName, String type, PedagogicalSoftwareElement element, String inputValue, String solutionValue) {
+    public PedagogicalSoftwareInput(String inputName, String type, String opcode, PedagogicalSoftwareElement element, String inputValue, String solutionValue) {
         this.inputName = inputName;
         this.type = type;
+        this.opcode = opcode;
         this.element = element;
         this.inputValue = inputValue;
         this.solutionValue = solutionValue;
