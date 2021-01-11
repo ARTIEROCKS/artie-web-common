@@ -7,8 +7,8 @@ public class NextStepHint {
 
     private List<PedagogicalSoftwareElement> addElements = new ArrayList<>();
     private List<PedagogicalSoftwareElement> deleteElements = new ArrayList<>();
-
     private List<PedagogicalSoftwareInput> replaceInputs = new ArrayList<>();
+    private List<PedagogicalSoftwareElement> replacePositions = new ArrayList<>();
 
     public List<PedagogicalSoftwareElement> getAddElements() { return addElements;}
     public void setAddElements(List<PedagogicalSoftwareElement> addElements) {
@@ -22,6 +22,9 @@ public class NextStepHint {
 
     public List<PedagogicalSoftwareInput> getReplaceInputs(){return this.replaceInputs;}
     public void setReplaceInputs(List<PedagogicalSoftwareInput> pedagogicalSoftwareInputs){this.replaceInputs = pedagogicalSoftwareInputs;}
+
+    public List<PedagogicalSoftwareElement> getReplacePositions(){return this.replacePositions;}
+    public void setReplacePositions(List<PedagogicalSoftwareElement> replacePositions){this.replacePositions = replacePositions;}
 
 
     /**
@@ -77,4 +80,9 @@ public class NextStepHint {
         this.replaceInputs.add(replaceInput);
     }
 
+    /**
+     * Add element to the replace position list
+     * @param replacePosition
+     */
+    public void putReplacePositions(PedagogicalSoftwareElement replacePosition){this.replacePositions.add(replacePosition);}
 }
