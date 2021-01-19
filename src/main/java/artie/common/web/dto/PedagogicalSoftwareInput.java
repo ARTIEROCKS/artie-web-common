@@ -5,7 +5,7 @@ public class PedagogicalSoftwareInput {
     private String inputName;
     private String type;
     private String opcode;
-    private PedagogicalSoftwareElement element;
+    private PedagogicalSoftwareBlock element;
     private String inputValue;
     private String solutionValue;
 
@@ -22,10 +22,10 @@ public class PedagogicalSoftwareInput {
     public String getOpCode() { return opcode; }
     public void setOpcode(String opcode){ this.opcode = opcode; }
 
-    public PedagogicalSoftwareElement getElement() {
+    public PedagogicalSoftwareBlock getElement() {
         return element;
     }
-    public void setElement(PedagogicalSoftwareElement element) {
+    public void setElement(PedagogicalSoftwareBlock element) {
         this.element = element;
     }
 
@@ -57,7 +57,7 @@ public class PedagogicalSoftwareInput {
      * @param inputValue
      * @param solutionValue
      */
-    public PedagogicalSoftwareInput(String inputName, String type, String opcode, PedagogicalSoftwareElement element, String inputValue, String solutionValue) {
+    public PedagogicalSoftwareInput(String inputName, String type, String opcode, PedagogicalSoftwareBlock element, String inputValue, String solutionValue) {
         this.inputName = inputName;
         this.type = type;
         this.opcode = opcode;
