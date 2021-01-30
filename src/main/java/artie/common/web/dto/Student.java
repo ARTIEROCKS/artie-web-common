@@ -7,8 +7,8 @@ public class Student {
     private String name;
     private String lastName;
     private String studentNumber;
-    private String competence;
-    private String motivation; 
+    private int competence;
+    private int motivation;
 
     public String getId() {
         return id;
@@ -34,17 +34,17 @@ public class Student {
     public String getStudentNumber(){return studentNumber;}
     public void setStudentNumber(String studentNumber){this.studentNumber = studentNumber;}
 
-    public String getCompetence() {
+    public int getCompetence() {
         return competence;
     }
-    public void setCompetence(String competence) {
+    public void setCompetence(int competence) {
         this.competence = competence;
     }
 
-    public String getMotivation() {
+    public int getMotivation() {
         return motivation;
     }
-    public void setMotivation(String motivation) {
+    public void setMotivation(int motivation) {
         this.motivation = motivation;
     }
     
@@ -62,7 +62,7 @@ public class Student {
      * @param competence
      * @param motivation
      */
-    public Student(String id, String name, String lastName, String studentNumber, String competence, String motivation){
+    public Student(String id, String name, String lastName, String studentNumber, int competence, int motivation){
     	this.id = id;
     	this.name = name;
     	this.lastName = lastName;
