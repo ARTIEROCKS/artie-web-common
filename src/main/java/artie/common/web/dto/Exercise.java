@@ -16,6 +16,8 @@ public class Exercise {
     private String finishedExerciseId = null;
     private int validSolution = ValidSolutionEnum.WAITING_APPROVAL.getValue();
 
+    private boolean isEvaluation;
+
 
     public String getId() {
     	return id;
@@ -54,6 +56,10 @@ public class Exercise {
     public int getValidSolution(){ return this.validSolution; }
     public void setValidSolution(int validSolution){this.validSolution = validSolution; }
 
+    public boolean getIsEvaluation(){ return this.isEvaluation; }
+    public void setIsEvaluation(boolean isEvaluation){this.isEvaluation = isEvaluation; }
+
+
     /**
      * Default constructor
      */
@@ -65,12 +71,14 @@ public class Exercise {
      * @param name
      * @param description
      * @param skills
+     * @param isEvaluation
      */
-    public Exercise(String id, String name, String description, List<Skill> skills) {
+    public Exercise(String id, String name, String description, List<Skill> skills, boolean isEvaluation) {
         this.id = id;
     	this.name = name;
         this.description = description;
         this.skills = skills;
+        this.isEvaluation = isEvaluation;
     }
 
     /**
@@ -81,13 +89,15 @@ public class Exercise {
      * @param finishedExerciseId
      * @param screenShot
      * @param validSolution
+     * @param isEvaluation
      */
-    public Exercise(String id, String name, String description, String finishedExerciseId, String screenShot, int validSolution){
+    public Exercise(String id, String name, String description, String finishedExerciseId, String screenShot, int validSolution, boolean isEvaluation){
         this.id = id;
         this.name = name;
         this.description = description;
         this.finishedExerciseId = finishedExerciseId;
         this.screenShot = screenShot;
         this.validSolution = validSolution;
+        this.isEvaluation = isEvaluation;
     }
 }
