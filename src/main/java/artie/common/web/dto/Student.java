@@ -8,6 +8,7 @@ public class Student {
     private String lastName;
     private String studentNumber;
     private int gender;
+    private int motherTongue;
     private int competence;
     private int motivation;
 
@@ -38,6 +39,9 @@ public class Student {
     public int getGender(){return gender;}
     public void setGender(int gender){this.gender = gender;}
 
+    public int getMotherTongue(){return motherTongue;}
+    public void setMotherTongue(int motherTongue){this.motherTongue = motherTongue;}
+
     public int getCompetence() {
         return competence;
     }
@@ -64,15 +68,17 @@ public class Student {
      * @param lastName
      * @param studentNumber
      * @param gender
+     * @param motherTongue
      * @param competence
      * @param motivation
      */
-    public Student(String id, String name, String lastName, String studentNumber, int gender, int competence, int motivation){
+    public Student(String id, String name, String lastName, String studentNumber, int gender, int motherTongue, int competence, int motivation){
     	this.id = id;
     	this.name = name;
     	this.lastName = lastName;
     	this.studentNumber = studentNumber;
     	this.gender = gender;
+    	this.motherTongue = motherTongue;
     	this.competence = competence;
     	this.motivation = motivation;
     }
