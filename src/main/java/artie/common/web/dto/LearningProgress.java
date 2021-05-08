@@ -1,6 +1,7 @@
 package artie.common.web.dto;
 
 import java.time.LocalDateTime;
+import java.util.Date;
 
 public class LearningProgress {
 
@@ -9,11 +10,11 @@ public class LearningProgress {
     private double totalDistance;
     private double grade;
     private LocalDateTime dateTime;
-    private LocalDateTime lastLogin;
+    private Date lastLogin;
     private boolean requestHelp;
     private double secondsHelpOpen;
     private boolean finishedExercise;
-    private boolean validSolution;
+    private int validSolution;
 
     public Exercise getExercise() {
         return exercise;
@@ -50,10 +51,10 @@ public class LearningProgress {
         this.dateTime = dateTime;
     }
 
-    public LocalDateTime getLastLogin() {
+    public Date getLastLogin() {
         return lastLogin;
     }
-    public void setLastLogin(LocalDateTime lastLogin) {
+    public void setLastLogin(Date lastLogin) {
         this.lastLogin = lastLogin;
     }
 
@@ -78,10 +79,10 @@ public class LearningProgress {
         this.finishedExercise = finishedExercise;
     }
 
-    public boolean isValidSolution() {
+    public int isValidSolution() {
         return validSolution;
     }
-    public void setValidSolution(boolean validSolution) {
+    public void setValidSolution(int validSolution) {
         this.validSolution = validSolution;
     }
 
@@ -104,8 +105,8 @@ public class LearningProgress {
      * @param validSolution
      */
     public LearningProgress(Exercise exercise, Student student, double totalDistance, double grade, LocalDateTime dateTime,
-                            LocalDateTime lastLogin, boolean requestHelp, double secondsHelpOpen, boolean finishedExercise,
-                            boolean validSolution) {
+                            Date lastLogin, boolean requestHelp, double secondsHelpOpen, boolean finishedExercise,
+                            int validSolution) {
         this.exercise = exercise;
         this.student = student;
         this.totalDistance = totalDistance;
