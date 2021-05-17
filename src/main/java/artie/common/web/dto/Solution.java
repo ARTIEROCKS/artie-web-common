@@ -7,6 +7,7 @@ public class Solution {
     private String name;
     private String description;
     private String screenShot;
+    private String binary;
 
     public String getId() {
         return id;
@@ -36,6 +37,9 @@ public class Solution {
         this.screenShot = screenShot;
     }
 
+    public String getBinary(){return binary;}
+    public void setBinary(String binary){this.binary = binary;}
+
     /**
      * Default constructor
      */
@@ -47,12 +51,14 @@ public class Solution {
      * @param name
      * @param description
      * @param screenShot
+     * @param binary
      */
-    public Solution(String id, String exerciseId, String name, String description, String screenShot) {
+    public Solution(String id, String exerciseId, String name, String description, String screenShot, String binary) {
         this.id = id;
         this.exerciseId = exerciseId;
         this.name = name;
         this.description = description;
         this.screenShot = screenShot;
+        this.binary = binary;
     }
 }
