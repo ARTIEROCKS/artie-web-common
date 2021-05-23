@@ -13,6 +13,7 @@ public class Exercise {
     private List<Skill> skills = new ArrayList<>();
 
     private String screenShot = null;
+    private String binary = null;
     private String finishedExerciseId = null;
     private int validSolution = ValidSolutionEnum.WAITING_APPROVAL.getValue();
 
@@ -50,6 +51,9 @@ public class Exercise {
 
     public String getScreenShot(){ return screenShot; }
     public void setScreenShot(String screenShot){ this.screenShot = screenShot; }
+
+    public String getBinary(){ return binary; }
+    public void setBinary(String binary){ this.binary = binary;}
 
     public String getFinishedExerciseId(){ return finishedExerciseId; }
     public void setFinishedExerciseId(String finishedExerciseId){ this.finishedExerciseId = finishedExerciseId; }
@@ -94,16 +98,18 @@ public class Exercise {
      * @param description
      * @param finishedExerciseId
      * @param screenShot
+     * @param binary
      * @param validSolution
      * @param isEvaluation
      * @param level
      */
-    public Exercise(String id, String name, String description, String finishedExerciseId, String screenShot, int validSolution, boolean isEvaluation, int level){
+    public Exercise(String id, String name, String description, String finishedExerciseId, String screenShot, String binary, int validSolution, boolean isEvaluation, int level){
         this.id = id;
         this.name = name;
         this.description = description;
         this.finishedExerciseId = finishedExerciseId;
         this.screenShot = screenShot;
+        this.binary = binary;
         this.validSolution = validSolution;
         this.isEvaluation = isEvaluation;
         this.level = level;
