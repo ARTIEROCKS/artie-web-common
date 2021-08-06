@@ -7,25 +7,25 @@ import java.time.LocalDateTime;
 import java.util.Date;
 
 public class SoftwareData {
-    private Object student;
-    private Exercise exercise;
-    private Object solutionDistance;
-    private LocalDateTime dateTime;
-    private double secondsHelpOpen;
-    private boolean finishedExercise;
-    private int validSolution;
-    private double grade;
+    private Student student;
+    protected Exercise exercise;
+    private SolutionDistance solutionDistance;
+    protected LocalDateTime dateTime;
+    protected double secondsHelpOpen;
+    protected boolean finishedExercise;
+    protected int validSolution;
+    protected double grade;
     @JsonFormat(shape = JsonFormat.Shape.STRING, pattern = "dd/MM/yyyy hh:mm:ss")
-    private Date lastLogin;
+    protected Date lastLogin;
 
-    public Object getStudent() {return student;}
-    public void setStudent(Object student) {this.student = student;}
+    public Student getStudent() {return student;}
+    public void setStudent(Student student) {this.student = student;}
 
     public Exercise getExercise() {return exercise;}
     public void setExercise(Exercise exercise) {this.exercise = exercise;}
 
-    public Object getSolutionDistance() {return solutionDistance;}
-    public void setSolutionDistance(Object solutionDistance) {this.solutionDistance = solutionDistance;}
+    public SolutionDistance getSolutionDistance() {return solutionDistance;}
+    public void setSolutionDistance(SolutionDistance solutionDistance) {this.solutionDistance = solutionDistance;}
 
     public LocalDateTime getDateTime() {return dateTime;}
     public void setDateTime(LocalDateTime dateTime) {this.dateTime = dateTime;}
@@ -65,7 +65,7 @@ public class SoftwareData {
      * @param grade
      * @param lastLogin
      */
-    public SoftwareData(Object student, Exercise exercise, Object solutionDistance,
+    public SoftwareData(Student student, Exercise exercise, SolutionDistance solutionDistance,
                         double secondsHelpOpen, boolean finishedExercise, int validSolution, double grade, Date lastLogin) {
         this.student = student;
         this.exercise = exercise;

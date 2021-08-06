@@ -71,4 +71,24 @@ public class SolutionDistance {
         this.inputDistance = inputDistance;
         this.totalDistance = totalDistance;
     }
+
+    /**
+     * Parameterized constructor
+     * @param familyDistance
+     * @param elementDistance
+     * @param positionDistance
+     * @param inputDistance
+     * @param totalDistance
+     * @param nextSteps
+     */
+    public SolutionDistance(double familyDistance, double elementDistance, double positionDistance,
+                            double inputDistance, double totalDistance, NextStepHint nextSteps) {
+        super();
+        this.familyDistance = familyDistance;
+        this.elementDistance = elementDistance;
+        this.positionDistance = positionDistance;
+        this.inputDistance = inputDistance;
+        this.totalDistance = totalDistance;
+        this.nextSteps = nextSteps;
+    }
 }
