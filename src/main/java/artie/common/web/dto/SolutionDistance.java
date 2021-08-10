@@ -64,7 +64,7 @@ public class SolutionDistance {
      */
     public SolutionDistance(double familyDistance, double elementDistance, double positionDistance,
                             double inputDistance, double totalDistance) {
-        super();
+
         this.familyDistance = familyDistance;
         this.elementDistance = elementDistance;
         this.positionDistance = positionDistance;
@@ -83,7 +83,7 @@ public class SolutionDistance {
      */
     public SolutionDistance(double familyDistance, double elementDistance, double positionDistance,
                             double inputDistance, double totalDistance, NextStepHint nextSteps) {
-        super();
+
         this.familyDistance = familyDistance;
         this.elementDistance = elementDistance;
         this.positionDistance = positionDistance;
