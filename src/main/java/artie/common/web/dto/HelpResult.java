@@ -6,7 +6,6 @@ public class HelpResult {
 
     private String id;
     private boolean predictedNeedHelp;
-    private boolean needHelp;
     private boolean answeredNeedHelp;
     private Date dateAnsweredNeedHelp;
     private SolutionDistance solutionDistance;
@@ -16,9 +15,6 @@ public class HelpResult {
 
     public boolean isPredictedNeedHelp() {return predictedNeedHelp;}
     public void setPredictedNeedHelp(boolean predictedNeedHelp) {this.predictedNeedHelp = predictedNeedHelp;}
-
-    public boolean isNeedHelp(){return needHelp;}
-    public void setNeedHelp(boolean needHelp){this.needHelp = needHelp;}
 
     public boolean isAnsweredNeedHelp() {return answeredNeedHelp;}
     public void setAnsweredNeedHelp(boolean answeredNeedHelp) {this.answeredNeedHelp = answeredNeedHelp;}
@@ -38,15 +34,13 @@ public class HelpResult {
      * Parameterized constructor
      * @param id
      * @param predictedNeedHelp
-     * @param needHelp+
      * @param answeredNeedHelp
      * @param dateAnsweredNeedHelp
      * @param solutionDistance
      */
-    public HelpResult(String id, boolean predictedNeedHelp, boolean needHelp, boolean answeredNeedHelp, Date dateAnsweredNeedHelp, SolutionDistance solutionDistance) {
+    public HelpResult(String id, boolean predictedNeedHelp, boolean answeredNeedHelp, Date dateAnsweredNeedHelp, SolutionDistance solutionDistance) {
         this.id = id;
         this.predictedNeedHelp = predictedNeedHelp;
-        this.needHelp = needHelp;
         this.answeredNeedHelp = answeredNeedHelp;
         this.dateAnsweredNeedHelp = dateAnsweredNeedHelp;
         this.solutionDistance = solutionDistance;
