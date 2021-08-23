@@ -2,6 +2,7 @@ package artie.common.web.dto;
 
 public class SolutionDistance {
 
+    private String solutionId = null;
     private double familyDistance=-1;
     private double elementDistance=-1;
     private double positionDistance=-1;
@@ -10,6 +11,9 @@ public class SolutionDistance {
     private double totalDistance = -1;
 
     private NextStepHint nextSteps = null;
+
+    public String getSolutionId(){ return solutionId; }
+    public void setSolutionId(String solutionId){ this.solutionId = solutionId;}
 
     public double getFamilyDistance() {
         return familyDistance;
@@ -56,15 +60,17 @@ public class SolutionDistance {
 
     /**
      * Parameterized constructor
+     * @param solutionId
      * @param familyDistance
      * @param elementDistance
      * @param positionDistance
      * @param inputDistance
      * @param totalDistance
      */
-    public SolutionDistance(double familyDistance, double elementDistance, double positionDistance,
+    public SolutionDistance(String solutionId, double familyDistance, double elementDistance, double positionDistance,
                             double inputDistance, double totalDistance) {
 
+        this.solutionId = solutionId;
         this.familyDistance = familyDistance;
         this.elementDistance = elementDistance;
         this.positionDistance = positionDistance;
@@ -74,6 +80,7 @@ public class SolutionDistance {
 
     /**
      * Parameterized constructor
+     * @param solutionId
      * @param familyDistance
      * @param elementDistance
      * @param positionDistance
@@ -81,9 +88,10 @@ public class SolutionDistance {
      * @param totalDistance
      * @param nextSteps
      */
-    public SolutionDistance(double familyDistance, double elementDistance, double positionDistance,
+    public SolutionDistance(String solutionId, double familyDistance, double elementDistance, double positionDistance,
                             double inputDistance, double totalDistance, NextStepHint nextSteps) {
 
+        this.solutionId = solutionId;
         this.familyDistance = familyDistance;
         this.elementDistance = elementDistance;
         this.positionDistance = positionDistance;
