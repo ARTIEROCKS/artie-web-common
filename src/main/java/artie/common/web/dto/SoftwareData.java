@@ -17,6 +17,8 @@ public class SoftwareData {
     protected double grade;
     @JsonFormat(shape = JsonFormat.Shape.STRING, pattern = "dd/MM/yyyy hh:mm:ss")
     protected Date lastLogin;
+    @JsonFormat(shape = JsonFormat.Shape.STRING, pattern = "dd/MM/yyyy hh:mm:ss")
+    protected Date lastExerciseChange;
 
     public Student getStudent() {return student;}
     public void setStudent(Student student) {this.student = student;}
@@ -45,6 +47,9 @@ public class SoftwareData {
     public Date getLastLogin() {return lastLogin;}
     public void setLastLogin(Date lastLogin) {this.lastLogin = lastLogin;}
 
+    public Date getLastExerciseChange() {return lastExerciseChange;}
+    public void setLastExerciseChange(Date lastExerciseChange) {this.lastExerciseChange = lastExerciseChange;}
+
     /**
      * Default Constructor
      */
@@ -64,9 +69,11 @@ public class SoftwareData {
      * @param validSolution
      * @param grade
      * @param lastLogin
+     * @param lastExerciseChange
      */
     public SoftwareData(Student student, Exercise exercise, SolutionDistance solutionDistance,
-                        double secondsHelpOpen, boolean finishedExercise, int validSolution, double grade, Date lastLogin) {
+                        double secondsHelpOpen, boolean finishedExercise, int validSolution, double grade,
+                        Date lastLogin, Date lastExerciseChange) {
         this.student = student;
         this.exercise = exercise;
         this.solutionDistance = solutionDistance;
@@ -76,5 +83,6 @@ public class SoftwareData {
         this.validSolution = validSolution;
         this.grade = grade;
         this.lastLogin = lastLogin;
+        this.lastExerciseChange = lastExerciseChange;
     }
 }
