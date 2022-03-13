@@ -10,7 +10,7 @@
 	</parent>
 	<groupId>artie.web</groupId>
 	<artifactId>common</artifactId>
-	<version>0.9.1-RELEASE</version>
+	<version>0.10.0-RELEASE</version>
 	<name>web</name>
 	<description>Common Library for ARTIE Web and Web Services</description>
 
@@ -63,7 +63,7 @@
 		<dependency>
 			<groupId>artie.sensor</groupId>
 			<artifactId>common</artifactId>
-			<version>1.0-RELEASE</version>
+			<version>1.1.0-RELEASE</version>
 		</dependency>
 	</dependencies>
 
