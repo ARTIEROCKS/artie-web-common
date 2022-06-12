@@ -1,5 +1,12 @@
 package artie.common.web.dto;
 
+import lombok.AllArgsConstructor;
+import lombok.Data;
+import lombok.NoArgsConstructor;
+
+@Data
+@AllArgsConstructor
+@NoArgsConstructor
 public class SolutionDistance {
 
     private String solutionId = null;
@@ -11,52 +18,6 @@ public class SolutionDistance {
     private double totalDistance = -1;
 
     private NextStepHint nextSteps = null;
-
-    public String getSolutionId(){ return solutionId; }
-    public void setSolutionId(String solutionId){ this.solutionId = solutionId;}
-
-    public double getFamilyDistance() {
-        return familyDistance;
-    }
-    public void setFamilyDistance(double familyDistance) {
-        this.familyDistance = familyDistance;
-    }
-
-    public double getElementDistance() {
-        return elementDistance;
-    }
-    public void setElementDistance(double elementDistance) {
-        this.elementDistance = elementDistance;
-    }
-
-    public double getPositionDistance() {
-        return positionDistance;
-    }
-    public void setPositionDistance(double positionDistance) {
-        this.positionDistance = positionDistance;
-    }
-
-    public double getInputDistance() {
-        return inputDistance;
-    }
-    public void setInputDistance(double inputDistance) {
-        this.inputDistance = inputDistance;
-    }
-
-    public double getTotalDistance() {
-        return totalDistance;
-    }
-    public void setTotalDistance(double totalDistance) {
-        this.totalDistance = totalDistance;
-    }
-
-    public NextStepHint getNextSteps(){return nextSteps;}
-    public void setNextSteps(NextStepHint nextSteps){this.nextSteps = nextSteps;}
-
-    /**
-     * Default constructor
-     */
-    public SolutionDistance() {}
 
     /**
      * Parameterized constructor
@@ -76,27 +37,5 @@ public class SolutionDistance {
         this.positionDistance = positionDistance;
         this.inputDistance = inputDistance;
         this.totalDistance = totalDistance;
-    }
-
-    /**
-     * Parameterized constructor
-     * @param solutionId
-     * @param familyDistance
-     * @param elementDistance
-     * @param positionDistance
-     * @param inputDistance
-     * @param totalDistance
-     * @param nextSteps
-     */
-    public SolutionDistance(String solutionId, double familyDistance, double elementDistance, double positionDistance,
-                            double inputDistance, double totalDistance, NextStepHint nextSteps) {
-
-        this.solutionId = solutionId;
-        this.familyDistance = familyDistance;
-        this.elementDistance = elementDistance;
-        this.positionDistance = positionDistance;
-        this.inputDistance = inputDistance;
-        this.totalDistance = totalDistance;
-        this.nextSteps = nextSteps;
     }
 }

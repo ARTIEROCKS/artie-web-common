@@ -2,34 +2,16 @@ package artie.common.web.dto;
 
 import com.fasterxml.jackson.core.JsonProcessingException;
 import com.fasterxml.jackson.databind.ObjectMapper;
+import lombok.AllArgsConstructor;
+import lombok.Data;
+import lombok.NoArgsConstructor;
 
+@Data
+@AllArgsConstructor
+@NoArgsConstructor
 public class Response {
 
     private ResponseBody body;
-
-
-
-    public ResponseBody getBody() {
-        return body;
-    }
-
-    public void setBody(ResponseBody body) {
-        this.body = body;
-    }
-
-    /**
-     * Default Constructor
-     */
-    public Response() {}
-
-    /**
-     * Parameterized constructor
-     * @param body
-     */
-    public Response(ResponseBody body) {
-        this.body = body;
-    }
-
 
     /**
      * Function to transform this object in a JSON

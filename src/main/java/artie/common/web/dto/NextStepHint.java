@@ -1,8 +1,15 @@
 package artie.common.web.dto;
 
+import lombok.AllArgsConstructor;
+import lombok.Data;
+import lombok.NoArgsConstructor;
+
 import java.util.ArrayList;
 import java.util.List;
 
+@Data
+@AllArgsConstructor
+@NoArgsConstructor
 public class NextStepHint {
 
     private List<PedagogicalSoftwareBlock> addBlocks = new ArrayList<>();
@@ -10,27 +17,6 @@ public class NextStepHint {
     private List<PedagogicalSoftwareInput> replaceInputs = new ArrayList<>();
     private List<PedagogicalSoftwareBlock> replacePositions = new ArrayList<>();
 
-    public List<PedagogicalSoftwareBlock> getAddBlocks() { return addBlocks;}
-    public void setAddBlocks(List<PedagogicalSoftwareBlock> addBlocks) {
-        this.addBlocks = addBlocks;
-    }
-
-    public List<PedagogicalSoftwareBlock> getDeleteBlocks() {
-        return deleteBlocks;
-    }
-    public void setDeleteBlocks(List<PedagogicalSoftwareBlock> deleteBlocks) { this.deleteBlocks = deleteBlocks; }
-
-    public List<PedagogicalSoftwareInput> getReplaceInputs(){return this.replaceInputs;}
-    public void setReplaceInputs(List<PedagogicalSoftwareInput> pedagogicalSoftwareInputs){this.replaceInputs = pedagogicalSoftwareInputs;}
-
-    public List<PedagogicalSoftwareBlock> getReplacePositions(){return this.replacePositions;}
-    public void setReplacePositions(List<PedagogicalSoftwareBlock> replacePositions){this.replacePositions = replacePositions;}
-
-
-    /**
-     * Default constructor
-     */
-    public NextStepHint(){}
 
     /**
      * Add blocks to the add list

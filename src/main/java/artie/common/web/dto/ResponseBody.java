@@ -1,27 +1,16 @@
 package artie.common.web.dto;
 
+import lombok.AllArgsConstructor;
+import lombok.Data;
+import lombok.NoArgsConstructor;
+
+@Data
+@AllArgsConstructor
+@NoArgsConstructor
 public class ResponseBody {
     private String message;
     private Object object;
 
-    public String getMessage() {
-        return message;
-    }
-    public void setMessage(String message) {
-        this.message = message;
-    }
-
-    public Object getObject() {
-        return object;
-    }
-    public void setObject(Object object) {
-        this.object = object;
-    }
-
-    /**
-     * Default constructor
-     */
-    public ResponseBody() {}
 
     /**
      * Parameterized constructor
@@ -39,13 +28,4 @@ public class ResponseBody {
         this.object = object;
     }
 
-    /**
-     * Parameterized constructor
-     * @param message
-     * @param object
-     */
-    public ResponseBody(String message, Object object) {
-        this.message = message;
-        this.object = object;
-    }
 }

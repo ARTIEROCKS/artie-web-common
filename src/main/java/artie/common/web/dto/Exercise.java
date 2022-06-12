@@ -1,10 +1,16 @@
 package artie.common.web.dto;
 
 import artie.common.web.enums.ValidSolutionEnum;
+import lombok.AllArgsConstructor;
+import lombok.Data;
+import lombok.NoArgsConstructor;
 
 import java.util.ArrayList;
 import java.util.List;
 
+@Data
+@AllArgsConstructor
+@NoArgsConstructor
 public class Exercise {
 	
 	private String id;
@@ -20,58 +26,6 @@ public class Exercise {
     private boolean isEvaluation;
     private int level;
 
-
-    public String getId() {
-    	return id;
-    }
-    public void setId(String id) {
-    	this.id = id;
-    }
-    
-    public String getName() {
-        return name;
-    }
-    public void setName(String name) {
-        this.name = name;
-    }
-
-    public String getDescription() {
-        return description;
-    }
-    public void setDescription(String description) {
-        this.description = description;
-    }
-
-    public List<Skill> getSkills() {
-        return skills;
-    }
-    public void setSkills(List<Skill> skills) {
-        this.skills = skills;
-    }
-
-    public String getScreenShot(){ return screenShot; }
-    public void setScreenShot(String screenShot){ this.screenShot = screenShot; }
-
-    public String getBinary(){ return binary; }
-    public void setBinary(String binary){ this.binary = binary;}
-
-    public String getFinishedExerciseId(){ return finishedExerciseId; }
-    public void setFinishedExerciseId(String finishedExerciseId){ this.finishedExerciseId = finishedExerciseId; }
-
-    public int getValidSolution(){ return this.validSolution; }
-    public void setValidSolution(int validSolution){this.validSolution = validSolution; }
-
-    public boolean getIsEvaluation(){ return this.isEvaluation; }
-    public void setIsEvaluation(boolean isEvaluation){this.isEvaluation = isEvaluation; }
-
-    public int getLevel(){ return this.level; }
-    public void setLevel(int level){ this.level = level; }
-
-
-    /**
-     * Default constructor
-     */
-    public Exercise(){}
 
     /**
      * Parameterized constructor for setting the exercise information

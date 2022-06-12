@@ -10,7 +10,7 @@
 	</parent>
 	<groupId>artie.web</groupId>
 	<artifactId>common</artifactId>
-	<version>0.10.0-RELEASE</version>
+	<version>0.11.0-RELEASE</version>
 	<name>web</name>
 	<description>Common Library for ARTIE Web and Web Services</description>
 
@@ -64,6 +64,13 @@
 			<groupId>artie.sensor</groupId>
 			<artifactId>common</artifactId>
 			<version>1.1.0-RELEASE</version>
+		</dependency>
+		<!-- TOOLS -->
+		<dependency>
+			<groupId>org.projectlombok</groupId>
+			<artifactId>lombok</artifactId>
+			<version>1.18.24</version>
+			<scope>provided</scope>
 		</dependency>
 	</dependencies>
 
