@@ -21,5 +21,6 @@ public class Student {
     private int motivation;
     private boolean recordFace;
     private boolean recordInteractions;
+    private boolean interactsWithRobot;
 
 }
