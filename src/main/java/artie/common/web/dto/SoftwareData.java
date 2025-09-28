@@ -37,15 +37,15 @@ public class SoftwareData {
 
     /**
      * Parameterized constructor
-     * @student student
-     * @exercise exercise
-     * @param solutionDistance
-     * @param secondsHelpOpen
-     * @param finishedExercise
-     * @param validSolution
-     * @param grade
-     * @param lastLogin
-     * @param lastExerciseChange
+     * @param student student
+     * @param exercise exercise
+     * @param solutionDistance solution distance
+     * @param secondsHelpOpen seconds with help open
+     * @param finishedExercise whether exercise is finished
+     * @param validSolution valid solution code
+     * @param grade grade
+     * @param lastLogin last login date
+     * @param lastExerciseChange last exercise change date
      */
     public SoftwareData(Student student, Exercise exercise, SolutionDistance solutionDistance,
                         double secondsHelpOpen, boolean finishedExercise, int validSolution, double grade,
